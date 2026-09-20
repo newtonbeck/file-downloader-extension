@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "File Downloader",
+  "version": "0.0.1",
+  "description": "Queue a whole folder from a cloud storage provider and let it download unattended, one file at a time, with automatic retry.",
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "64": "icon64.png",
+      "128": "icon128.png"
+    }
+  },
+  "permissions": [
+    "downloads",
+    "sidePanel",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  }
+}
