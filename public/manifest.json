@@ -12,9 +12,15 @@
     }
   },
   "permissions": [
+    "alarms",
     "downloads",
+    "downloads.ui",
+    "scripting",
     "sidePanel",
     "storage"
+  ],
+  "host_permissions": [
+    "https://www.dropbox.com/*"
   ],
   "background": {
     "service_worker": "background.js"

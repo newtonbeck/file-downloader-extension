@@ -12,9 +12,9 @@ export default defineConfig({
     target: 'esnext', // Modern Chrome supports ES modules
     outDir: 'dist',
     rollupOptions: {
+      // Panel only. The service worker has its own build — see vite.worker.config.ts.
       input: {
         main: resolve(__dirname, 'index.html'),
-        background: resolve(__dirname, 'public/background.js'),
       },
       output: {
         entryFileNames: `[name].js`,

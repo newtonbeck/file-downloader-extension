@@ -6,7 +6,7 @@ export function EmptyState() {
         Nothing queued yet
       </p>
       <p className="text-center">
-        Connect a provider and pick a folder to start a download
+        Open a Dropbox shared folder in a tab, then scan it from here
       </p>
     </div>
   );
